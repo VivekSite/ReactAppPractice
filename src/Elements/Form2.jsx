@@ -59,6 +59,17 @@ const Form2 = () => {
     alert("Submitted");
   };
 
+  const resetValue = () => {
+    setName(()=>{
+      return{
+        name:"",
+        email:"",
+        phone:"",
+        message:"",
+      }
+    })
+  };
+
   return (
     <>
       <div className="main_container">
@@ -75,6 +86,7 @@ const Form2 = () => {
               name="name"
               onChange={inputEvent}
               value={Name.name}
+              required
             />
             <input
               type="email"
@@ -82,6 +94,7 @@ const Form2 = () => {
               name="email"
               onChange={inputEvent}
               value={Name.email}
+              required
             />
             <input
               type="number"
@@ -89,6 +102,7 @@ const Form2 = () => {
               name="phone"
               onChange={inputEvent}
               value={Name.phone}
+              required
             />
 
             <input
@@ -98,7 +112,8 @@ const Form2 = () => {
               onChange={inputEvent}
               value={Name.message}
             />
-            <button type="submit" className="myBtn">Submit</button>
+            <button type="submit" className="myBtn" >Submit</button>
+            <button className="myBtn" onClick={resetValue}>Reset</button>
           </form>
         </div>
       </div>
