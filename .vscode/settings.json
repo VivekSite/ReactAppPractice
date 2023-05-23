@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+
+        
+    },
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+    "workbench.preferredLightColorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "editor.fontSize": 20
+}

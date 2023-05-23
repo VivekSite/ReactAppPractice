@@ -1,0 +1,19 @@
+.Time_box{
+    color: aquamarine;
+    background-color: rgb(47, 90, 133);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+}
+
+h1,button{
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem 1rem;
+
+}
+
