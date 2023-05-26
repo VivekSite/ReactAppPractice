@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './Elements/App';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./Index.css";
+import App from "./Elements/App";
 
 // ReactDOM.render(<h1>Hello React</h1>,
 //     document.getElementById("root"));
@@ -20,9 +19,8 @@ import App from './Elements/App';
 //                 using multiple jsx elements
 // ================================================================
 
-
 // console.log(`hi friends my name is ${name}`)      //template leterals
-// ReactDOM.render(                                  // for older version 
+// ReactDOM.render(                                  // for older version
 //     <>
 //         <h1>Hello {name}</h1>
 //         <p>hi how are you what do you want to beocome</p>
@@ -30,10 +28,8 @@ import App from './Elements/App';
 //     document.getElementById("root")
 // );
 
-
 // const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 // const day = ["mon","tue","wed","thu","fri","sat","sun"];
-
 
 // new Date(year, month, day, hours, minutes, seconds)
 // const date = new Date();
@@ -54,14 +50,12 @@ import App from './Elements/App';
 //     <>
 //         <h1 style={heading} >Hello {name}, This is internal css</h1>
 //         <h1 style={{color:'yellowgreen',backgroundColor:'aqua'}}>This is inline css</h1> {/*for inline css we have to pass an object */}
-        
-        
+
 //         {/* <p>hi how are you what do you want to beocome</p>
 //         <p><strong>Date :</strong>{` ${day[date.getDay()]} ${date.getDay()}/${month[date.getMonth()]}/${date.getFullYear()}`}</p>
 //         <p><strong>Time :</strong>{date.toLocaleString('en-US', { hour: 'numeric',minute:'2-digit',second:'2-digit', hour12: true })}</p> */}
 //     </>
 // );
-
 
 // const greet_box = {
 //     position:'relative',
@@ -83,8 +77,6 @@ import App from './Elements/App';
 // var greeting = '';
 // const cssStyle = { fontSize:'1.5rem'};
 
-
-
 // if(hour >= 15 && hour <19){
 //     greeting = 'Good Evening';
 //     cssStyle.color = 'green';
@@ -99,8 +91,6 @@ import App from './Elements/App';
 //     cssStyle.color = 'red';
 // }
 
-
-
 // root.render(
 //     <>
 //         <div style={{backgroundColor:'black', width:'100vw', height:'100vh'}}>
@@ -110,13 +100,6 @@ import App from './Elements/App';
 //         </div>
 //     </>
 // );
-
-
-
-
-
-
-
 
 // ================================================================================================================
 // ================================================================================================================
@@ -129,41 +112,11 @@ import App from './Elements/App';
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-        <App/>
-    </React.StrictMode>
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

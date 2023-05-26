@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Cloak from './Clock.jsx';
-import Form from './Forms.jsx';
-import Form2 from './Form2.jsx';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Clock from './Clock';
+import Form2 from './Form2';
 import ToDoList from './ToDoList';
 import IncDecBox from './IncDecBox';
-// import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-function App() { 
+export default function App() { 
   return (
     <>
-      <Cloak/>
-      {/* <Form/> */}
+      <Clock/>
       <Form2/>
       <ToDoList/>
       <IncDecBox/>
-
     </>
   );
 }
-
-export default App;
