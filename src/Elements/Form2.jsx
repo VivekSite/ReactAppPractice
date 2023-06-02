@@ -60,27 +60,35 @@ const Form2 = () => {
   };
 
   const resetValue = () => {
-    setName(()=>{
-      return{
-        name:"",
-        email:"",
-        phone:"",
-        message:"",
-      }
-    })
+    setName(() => {
+      return {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      };
+    });
   };
 
   return (
     <>
       <div className="main_container">
-        <div className="centered_container" style={{width:'550px'}}>
+        <div className="centered_container" style={{ width: "550px" }}>
           <h1>Hello {Name.name}</h1>
           <h1>{Name.email}</h1>
           <h1>{Name.phone}</h1>
           <h1>{Name.message}</h1>
 
-          <form onSubmit={onSubmits} style={{display:'flex', flexDirection:'column', backgroundColor:'transparent'}}>
+          <form
+            onSubmit={onSubmits}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              backgroundColor: "transparent",
+            }}
+          >
             <input
+              style={{margin:'2rem'}}
               type="text"
               placeholder="Enter Your Name"
               name="name"
@@ -89,6 +97,7 @@ const Form2 = () => {
               required
             />
             <input
+              style={{margin:'2rem'}}
               type="email"
               placeholder="Enter Your Email"
               name="email"
@@ -97,6 +106,7 @@ const Form2 = () => {
               required
             />
             <input
+              style={{margin:'2rem'}}
               type="number"
               placeholder="Enter Your Phone Number"
               name="phone"
@@ -106,14 +116,19 @@ const Form2 = () => {
             />
 
             <input
+              style={{margin:'2rem'}}
               type="text"
               placeholder="Enter Your Message"
               name="message"
               onChange={inputEvent}
               value={Name.message}
             />
-            <button type="submit" className="myBtn" >Submit</button>
-            <button className="myBtn" onClick={resetValue}>Reset</button>
+            <button type="submit" className="myBtn">
+              Submit
+            </button>
+            <button className="myBtn" onClick={resetValue}>
+              Reset
+            </button>
           </form>
         </div>
       </div>

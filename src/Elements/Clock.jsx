@@ -15,7 +15,7 @@ const Clock = () => {
 
   return (
     <>
-      <div style={{width:'100vw', height:'100vh'}}>
+      <div style={{height:'100vh'}}>
         <div className="Time_box">
           <h1 className="Time">{count}</h1>
           {/* <button onClick={update}>Update Time</button> */}
